@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: white;
+            margin-left: 25%;
+            margin-right:25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 2.5%;
+            width: 50%;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.6.1.min.css" />
+</head>
+<body>
+    <div class="container">
+        <form action="get-details.py" name="bio-form"></form>
+            <h2>Feedback</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder=""><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"><br><br>
+
+            <label>Please check all the emotions that apply to you</label><br>
+            <label for="ch-angry">Angry</label>
+            <input type="checkbox" id="ch-angry" name="mood" value="Angry"><br>
+
+            <label for="ch-sad">Sad</label>
+            <input type="checkbox" id="ch-sad" name="mood" value="Sad"><br>
+
+            <label for="ch-happy">Happy</label>
+            <input type="checkbox" id="ch-happy" name="mood" value="Happy"><br>
+
+            <label for="ch-ambi">Ambivalent</label>
+            <input type="checkbox" id="ch-ambi" name="mood" value="Ambivalent"><br><br>
+
+            <label>How satisfied were you with our service?</label><br>
+            <label for="rad-vsat">Very Satisfied</label>
+            <input type="radio" name="satisfaction" id="rad-vsat" value="Very Satisfied"><br>
+            
+
+            <label for="rad-sat">Satisfied</label>
+            <input type="radio" name="satisfaction" id="rad-sat" value="Satisfied"><br>
+            
+
+            <label for="rad-dc">Didn't care</label>
+            <input type="radio" name="satisfaction" id="rad-dc" value="Didn't care"><br>
+            
+
+            <label for="rad-dis">Dissatisfied</label>
+            <input type="radio" name="satisfaction" id="rad-dis" value="Dissatisfied"><br>
+            
+            <label for="rad-vdis">Very Dissatisfied</label>
+            <input type="radio" name="satisfaction" id="rad-vdis" value="Very Dissatisfied"><br><br>
+
+
+            <label for="comments">Further Comments</label>
+            <textarea form="bio-form" id="comments" cols="30" rows="10"></textarea><br>
+
+
+            <label for="photo">Bio Photo</label>
+            <input type="file" name="file-inp"><br>
+
+
+            <label for="visited">Location Visited</label>
+            <select name="locs" id="locs">
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
